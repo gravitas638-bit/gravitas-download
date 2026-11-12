@@ -1,0 +1,64 @@
+GRAVITAS SU MAC – COME PROVARLO
+================================
+
+Questa è una versione di prova: non è ancora "firmata" da Apple, quindi il Mac
+la blocca la prima volta. Si sblocca una volta sola, poi si apre normalmente.
+
+Funziona su macOS 10.15 (Catalina) o più recente. Va bene su tutti i Mac:
+sui Mac con chip Apple (M1, M2, M3, M4) alla prima apertura il Mac può chiedere
+di installare "Rosetta": rispondi Installa.
+
+
+1. PREPARARE L'APP
+------------------
+- Fai doppio clic su  Gravitas-Mac-<versione>.zip : compare  Gravitas.app
+- Trascina Gravitas.app nella cartella  Applicazioni
+
+
+2. SBLOCCARLA (una volta sola)
+------------------------------
+Modo più semplice (funziona sempre):
+- Apri  Terminale  (Applicazioni › Utility › Terminale)
+- Copia e incolla questa riga e premi Invio:
+
+      xattr -cr /Applications/Gravitas.app
+
+- Ora apri Gravitas con doppio clic.
+
+In alternativa, senza Terminale:
+- Doppio clic su Gravitas: compare un avviso ("non può essere aperta…"). Premi Fine / OK.
+- Apri  Impostazioni di Sistema › Privacy e sicurezza, scorri in basso:
+  accanto a "Gravitas è stata bloccata" premi  Apri comunque  e conferma.
+
+
+3. ACCEDERE
+-----------
+Al primo avvio Gravitas chiede email e password dell'account Gravitas
+(lo stesso del sito). Ogni licenza vale per un numero di computer: se il Mac
+risulta "un PC in più" e non entra, va aumentato il numero di PC dal centro di controllo.
+
+
+4. COSA PROVARE (e annotare cosa non va, anche con screenshot: Cmd+Maiusc+4)
+-----------------------------------------------------------------------------
+[ ] Si apre? La finestra è leggibile? Icone e frecce si vedono?
+[ ] Nuovo progetto, aggiungere categorie e voci, i numeri si aggiornano
+[ ] Salvare e riaprire un file .lpesi (anche uno fatto su Windows)
+[ ] Esporta Excel, Importa da Excel
+[ ] Stampa PDF  (serve Google Chrome o Microsoft Edge installato; senza,
+    Gravitas apre la lista nel browser e si stampa da lì in PDF)
+[ ] Casse e condizioni di carico, Prova di stabilità
+[ ] File unione con più file
+[ ] Riepilogo a parte, menu, scorciatoie (sul Mac: Cmd al posto di Ctrl)
+[ ] Cambio lingua
+
+Da sapere: per ora il doppio clic su un file .lpesi nel Finder non apre il file;
+si apre da Gravitas con File › Apri.
+
+
+5. PLUG-IN PER RHINO (Mac)
+--------------------------
+- Apri Rhino (7 o 8).
+- Trascina il file  gravitas-<versione>-rh7_0-any.yak  sulla finestra di Rhino.
+- Chiudi e riapri Rhino. Scrivi  GravitasPannello  nella riga di comando.
+Se il trascinamento non funziona: Rhino › Impostazioni › Plug-in › Installa…,
+rinomina il file .yak in .zip, aprilo e scegli  Gravitas.Rhino.rhp .
